@@ -33,10 +33,9 @@ def games():
         
     response = make_response(
         games,
-        200
+        200,
+        {"Content-Type": "application/json"}
     )
-
-    return response
 
     return response
 
